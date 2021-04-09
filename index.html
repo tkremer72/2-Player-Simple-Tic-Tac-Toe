@@ -3,7 +3,8 @@
 <head>
      <meta charset="UTF-8">
 
-     <meta name="description" content="JavaScript Tic Tac Toe Game">
+     <meta name="description" content="JavaScript 2 Player Tic Tac Toe Game">
+     <meta name="title" content="2 Person JavaScript Tic Tac Toe Game">
       <meta name="keywords" content="Babel, Bootstrap, CSS, ESLint, Flexbox, HTML, JavaScript, jQuery, Tic Tac Toe, Games, Responsive">
       <meta name="author" content="Thomas E. Kremer">
 
@@ -31,16 +32,15 @@
                      <span class="logo-text">Webtek</span>
                 </a>
          </div>
-  
           <ul class="nav-list" id="navi-list">
                <li class="list-item">
-                    <a href="#about-me">About Us</a>
+                    <a href="#about-me" hidden>About Us</a>
                </li>
                <li class="list-item">
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" hidden>Contact</a>
                </li>
                <li class="list-item">
-                    <a href="#contact">Support</a>
+                    <a href="#contact" hidden>Support</a>
                </li>
           </ul>
           <!-- <div class="menu" id="toggle-menu" onclick="toggleMenu()"> -->
@@ -50,7 +50,24 @@
                <div class="menu-line"></div>
           </div>
      </nav>
+
      <div class="main-content">
+          <h1 class="game-title">Tic-Tac-Toe</h1>
+          <h2>It's X's Turn</h2>
+          <div class="flex-container flex-column">
+               <div class="flex-container flex-wrap" id="board">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+                    <div class="square"></div>
+               </div>
+               <button id="reset-button">Reset</button>
+          </div>
 
      </div>
 
